@@ -1,0 +1,55 @@
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* WebStudio */
+.web {
+  color: #2196f3;
+}
+.logo {
+  font-size: 26px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+.logo:active,
+.logo:visited {
+  color: #212121;
+}
+/* Студия портфолио Контакты */
+
+.link {
+  color: #212121;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.link:hover {
+  color: #2196f3;
+}
+
+.email {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.email:hover {
+  color: #2196f3;
+}

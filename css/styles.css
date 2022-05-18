@@ -10,8 +10,12 @@ li {
 }
 ul {
   padding: 0;
+  margin: 0;
 }
 /* header */
+.header-nav {
+  display: inline-flex;
+}
 
 .nav-logo {
   font-family: 'Raleway';
@@ -19,9 +23,17 @@ ul {
   color: #212121;
   font-weight: 700;
   letter-spacing: 0.03em;
+  margin-left: 215px;
+  margin-top: 24px;
+  width: 145px;
+  height: 31px;
 }
 .nav-logo > span {
   color: #2196f3;
+}
+
+.nav-link {
+  height: 16px;
 }
 
 .nav-list {
@@ -30,7 +42,14 @@ ul {
   display: inline;
   font-weight: 500;
   letter-spacing: 0.02em;
+  padding-left: 0;
+  padding-right: 50px;
 }
+.nav-ul {
+  margin-left: 93px;
+  margin-top: 32px;
+}
+
 .nav-link:visited,
 .nav-link:active {
   color: #212121;
@@ -38,6 +57,16 @@ ul {
 .nav-link:hover {
   color: #2196f3;
 }
+
+.nav-div {
+  margin-top: 32px;
+  padding: 0;
+}
+
+.nav-contacts {
+  display: inline;
+}
+
 .link-contacts {
   color: #757575;
   font-size: 14px;

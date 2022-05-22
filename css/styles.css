@@ -1,13 +1,18 @@
 :root {
   --default-color: #212121;
   --hover-color: #2196f3;
-  --white-color: #fff;
+  --white-color: #ffffff;
   --paragraph-color: #757575;
   --background-color: #2f303a;
+  --second-background: #f5f4fa;
 }
 
 body {
   font-family: 'Roboto', 'sens-serif';
+  background-color: var(--white-color);
+  color: var(--default-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 a {
@@ -19,20 +24,19 @@ li {
 /* header */
 
 .nav-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', 'sans-serif';
   font-size: 26px;
   color: var(--default-color);
   font-weight: 700;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
 }
 .nav-logo > span {
   color: var(--hover-color);
 }
 .nav-list {
-  height: 16px;
-  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
+  line-height: 1.14;
 }
 li > .port:visited {
   color: var(--hover-color);
@@ -52,9 +56,9 @@ li > .studio:visited {
 
 .link-contacts {
   color: var(--paragraph-color);
-  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
+  line-height: 1.14;
 }
 .link-contacts:hover {
   color: var(--hover-color);
@@ -68,21 +72,26 @@ li > .studio:visited {
 
 .hero-title {
   font-size: 44px;
+  line-height: 1.36;
   font-weight: 900;
   color: var(--white-color);
   text-align: center;
+  text-transform: uppercase;
 }
 .hero-btn {
   background: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-size: 16px;
+  line-height: 1.87;
   font-weight: 700;
+  font-family: 'Roboto';
   color: var(--white-color);
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   border: 0px;
+  cursor: pointer;
 }
 /* preferences */
 
@@ -93,7 +102,6 @@ li > .studio:visited {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -101,29 +109,28 @@ li > .studio:visited {
 }
 .pref-title {
   color: var(--default-color);
-  font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
   font-weight: 700;
+  line-height: 1.14;
 }
 .pref-text {
   color: var(--paragraph-color);
-  font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.03em;
+  line-height: 1.71;
 }
 
 /* work */
 .work-title {
   font-size: 36px;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  line-height: 1.16;
+  color: var(--default-color);
 }
 
 /* team */
 
 .team {
-  background: #f5f4fa;
+  background-color: var(--second-background);
 }
 .team-wrapper {
   color: var(--white-color);
@@ -136,20 +143,19 @@ li > .studio:visited {
   color: var(--default-color);
   font-size: 36px;
   font-weight: 700;
-  letter-spacing: 0.03em;
 }
 .team-worker {
   font-size: 16px;
   color: var(--default-color);
   font-weight: 500;
-  letter-spacing: 0.03em;
   text-align: center;
+  line-height: 1.18;
 }
 .team-text {
   color: var(--paragraph-color);
   font-size: 16px;
+  line-height: 1.18;
   font-weight: 400;
-  letter-spacing: 0.03em;
   text-align: center;
 }
 /* footer */
@@ -161,8 +167,10 @@ address {
   background: var(--background-color);
 }
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', 'sans-serif';
   font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
   color: var(--white-color);
 }
 .footer-logo > span {
@@ -171,17 +179,15 @@ address {
 
 .footer-map {
   color: var(--white-color);
-  font-size: 14px;
   font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
 }
 .footer-map:hover {
   color: var(--hover-color);
 }
 
 /* portfolio menu */
-.portfolio {
-  background: #e5e5e5;
-}
 
 .works-title {
   position: absolute;
@@ -197,7 +203,7 @@ address {
 .work-item {
 }
 .work-item-btn {
-  background: #f5f4fa;
+  background-color: var(--second-background);
   border-radius: 4px;
   height: 38px;
   font-family: 'Roboto';
@@ -207,9 +213,8 @@ address {
   line-height: 1.62;
 
   text-align: center;
-  letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--default-color);
   border: 0;
 }
 
@@ -218,8 +223,10 @@ li > .all {
   background-color: var(--hover-color);
 }
 
-.work-item-btn:hover {
-  background: var(--hover-color);
+.work-item-btn:hover,
+.work-item-btn:focus,
+.work-item-btn:active {
+  background-color: var(--hover-color);
   color: var(--white-color);
 }
 
@@ -242,6 +249,5 @@ li > .all {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  color: #757575;
-  letter-spacing: 0.03em;
+  color: var(--paragraph-color);
 }

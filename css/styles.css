@@ -50,6 +50,10 @@ li > .studio:visited {
 .nav-link:active {
   color: var(--default-color);
 }
+.nav-link:focus {
+  color: var(--hover-color);
+}
+
 .nav-link:hover {
   color: var(--hover-color);
 }
@@ -133,7 +137,7 @@ li > .studio:visited {
   background-color: var(--second-background);
 }
 .team-wrapper {
-  color: var(--white-color);
+  background-color: var(--white-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);

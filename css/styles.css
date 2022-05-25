@@ -6,7 +6,6 @@
   --background-color: #2f303a;
   --second-background: #f5f4fa;
 }
-
 body {
   font-family: 'Roboto', 'sens-serif';
   background-color: var(--white-color);
@@ -14,15 +13,13 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-
 a {
   text-decoration: none;
 }
 li {
   list-style-type: none;
 }
-/* header */
-
+/* --------------------------header------------------------------ */
 .nav-logo {
   font-family: 'Raleway', 'sans-serif';
   font-size: 26px;
@@ -30,14 +27,17 @@ li {
   font-weight: 700;
   line-height: 1.19;
 }
+
 .nav-logo > span {
   color: var(--hover-color);
 }
+
 .nav-list {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
+
 li > .port:visited {
   color: var(--hover-color);
 }
@@ -50,11 +50,9 @@ li > .studio:visited {
 .nav-link:active {
   color: var(--default-color);
 }
-.nav-link:focus {
-  color: var(--hover-color);
-}
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--hover-color);
 }
 
@@ -64,12 +62,13 @@ li > .studio:visited {
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
-.link-contacts:hover {
+
+.link-contacts:hover,
+.link-contacts:focus {
   color: var(--hover-color);
 }
 
-/* hero */
-
+/* --------------------------hero--------------------------- */
 .hero {
   background-color: var(--background-color);
 }
@@ -81,6 +80,7 @@ li > .studio:visited {
   color: var(--white-color);
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 .hero-btn {
   background: var(--hover-color);
@@ -97,8 +97,7 @@ li > .studio:visited {
   border: 0px;
   cursor: pointer;
 }
-/* preferences */
-
+/* ---------------------------preferences--------------------------- */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -116,6 +115,7 @@ li > .studio:visited {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.14;
+  font-size: 14px;
 }
 .pref-text {
   color: var(--paragraph-color);
@@ -123,7 +123,7 @@ li > .studio:visited {
   line-height: 1.71;
 }
 
-/* work */
+/* -------------------------------------work------------------------------- */
 .work-title {
   font-size: 36px;
   font-weight: 700;
@@ -131,7 +131,7 @@ li > .studio:visited {
   color: var(--default-color);
 }
 
-/* team */
+/* ----------------------team------------------------------ */
 
 .team {
   background-color: var(--second-background);
@@ -162,7 +162,7 @@ li > .studio:visited {
   font-weight: 400;
   text-align: center;
 }
-/* footer */
+/* ---------------------------footer--------------------------------- */
 
 address {
   font-style: normal;
@@ -191,9 +191,9 @@ address {
   color: var(--hover-color);
 }
 
-/* portfolio menu */
+/* ------------------------portfolio menu---------------------- */
 
-.works-title {
+.portfolio-title {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -204,9 +204,7 @@ address {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
 }
-.work-item {
-}
-.work-item-btn {
+.portfolio-item-btn {
   background-color: var(--second-background);
   border-radius: 4px;
   height: 38px;
@@ -215,6 +213,7 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
 
   text-align: center;
 
@@ -227,14 +226,14 @@ li > .all {
   background-color: var(--hover-color);
 }
 
-.work-item-btn:hover,
-.work-item-btn:focus,
-.work-item-btn:active {
+.portfolio-item-btn:hover,
+.portfolio-item-btn:focus,
+.portfolio-item-btn:active {
   background-color: var(--hover-color);
   color: var(--white-color);
 }
 
-/* portfolio works */
+/* --------------------portfolio projects---------------------- */
 .project-item {
   box-sizing: border-box;
   background-color: var(--white-color);

@@ -6,33 +6,35 @@
   --background-color: #2f303a;
   --second-background: #f5f4fa;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
 body {
-  font-family: 'Roboto', 'sens-serif';
+  font-family: 'Roboto', sans-serif;
   background-color: var(--white-color);
   color: var(--default-color);
   font-size: 14px;
   letter-spacing: 0.03em;
-  margin: 0;
 }
 a {
   text-decoration: none;
 }
-ul {
+ul,
+ol {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
-li {
-  list-style-type: none;
-}
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-div {
-  margin: 0;
-  padding: 0;
 }
 /* --------------------------header------------------------------ */
 .nav-logo {

@@ -24,6 +24,9 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+}
 ul,
 ol {
   list-style: none;
@@ -36,25 +39,56 @@ ol {
   padding-right: 15px;
   margin: 0 auto;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* --------------------------header------------------------------ */
-.nav-logo {
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-logo {
   font-family: 'Raleway', 'sans-serif';
   font-size: 26px;
   color: var(--default-color);
   font-weight: 700;
   line-height: 1.19;
+  margin-right: 93px;
 }
-
-.nav-logo > span {
+.header-logo > span {
   color: var(--hover-color);
 }
-
-.nav-list {
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+}
+.header-link {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
+  color: var(--default-color);
 }
-
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
 li > .port:visited {
   color: var(--hover-color);
 }
@@ -63,16 +97,18 @@ li > .studio:visited {
   color: var(--hover-color);
 }
 
-.nav-link:visited,
-.nav-link:active {
-  color: var(--default-color);
-}
-
-.nav-link:hover,
-.nav-link:focus {
+.header-link:hover,
+.header-link:focus,
+.link-contacts:hover,
+.link-contacts:focus {
   color: var(--hover-color);
 }
-
+.header-contacts {
+  margin-left: auto;
+}
+.item-contacts:first-child {
+  margin-right: 50px;
+}
 .link-contacts {
   color: var(--paragraph-color);
   font-weight: 500;
@@ -80,17 +116,15 @@ li > .studio:visited {
   line-height: 1.14;
 }
 
-.link-contacts:hover,
-.link-contacts:focus {
-  color: var(--hover-color);
-}
-
 /* --------------------------hero--------------------------- */
 .hero {
   background-color: var(--background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-
 .hero-title {
+  margin: 0 auto;
+  width: 696px;
   font-size: 44px;
   line-height: 1.36;
   font-weight: 900;
@@ -98,8 +132,13 @@ li > .studio:visited {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  margin-bottom: 30px;
 }
 .hero-btn {
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 50px;
   background: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -115,17 +154,18 @@ li > .studio:visited {
   cursor: pointer;
 }
 /* ---------------------------preferences--------------------------- */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.pref {
+  padding-top: 94px;
+}
+.pref-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.pref-item {
+  height: 101px;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
 }
 .pref-title {
   color: var(--default-color);
@@ -133,6 +173,7 @@ li > .studio:visited {
   font-weight: 700;
   line-height: 1.14;
   font-size: 14px;
+  margin-bottom: 10px;
 }
 .pref-text {
   color: var(--paragraph-color);
@@ -141,19 +182,34 @@ li > .studio:visited {
 }
 
 /* -------------------------------------work------------------------------- */
+
 .work-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
   color: var(--default-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.work-list {
+  display: flex;
+  margin-left: -30px;
 }
 .work-item {
-  display: inline-block;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
 }
 /* ----------------------team------------------------------ */
 
 .team {
   background-color: var(--second-background);
+}
+.team-title {
+  color: var(--default-color);
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .team-wrapper {
   background-color: var(--white-color);
@@ -162,15 +218,12 @@ li > .studio:visited {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
 }
 .team-list {
   display: flex;
-  justify-content: space-between;
-}
-.team-title {
-  color: var(--default-color);
-  font-size: 36px;
-  font-weight: 700;
+  margin-left: -30px;
 }
 .team-worker {
   font-size: 16px;
@@ -178,6 +231,8 @@ li > .studio:visited {
   font-weight: 500;
   text-align: center;
   line-height: 1.18;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-text {
   color: var(--paragraph-color);
@@ -185,6 +240,7 @@ li > .studio:visited {
   line-height: 1.18;
   font-weight: 400;
   text-align: center;
+  margin-bottom: 30px;
 }
 /* ---------------------------footer--------------------------------- */
 
@@ -193,6 +249,8 @@ address {
 }
 .footer {
   background: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-family: 'Raleway', 'sans-serif';
@@ -204,7 +262,12 @@ address {
 .footer-logo > span {
   color: var(--hover-color);
 }
-
+.footer-list {
+  margin-top: 20px;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer-map {
   color: var(--white-color);
   font-style: normal;
@@ -227,23 +290,30 @@ address {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
 }
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .portfolio-item-btn {
   background-color: var(--second-background);
   border-radius: 4px;
   height: 38px;
   font-family: 'Roboto';
+  cursor: pointer;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-
   text-align: center;
-
   color: var(--default-color);
   border: 0;
+  padding: 6px 22px;
 }
-
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
 li > .all {
   color: var(--white-color);
   background-color: var(--hover-color);
@@ -258,22 +328,35 @@ li > .all {
 
 /* --------------------portfolio projects---------------------- */
 .project-item {
-  box-sizing: border-box;
   background-color: var(--white-color);
   border: 1px solid #eeeeee;
+  width: 370px;
+  height: 404px;
+  flex-basis: calc(100 / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
-
+.list-project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
 .project-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   color: var(--default-color);
-
+  margin-top: 20px;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  margin-left: 24px;
 }
 .project-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: var(--paragraph-color);
+  margin-bottom: 20px;
+  margin-left: 24px;
 }

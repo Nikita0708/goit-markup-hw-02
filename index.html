@@ -22,86 +22,83 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-
     <title>WebStudio</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <nav class="header-nav">
-          <a href="./index.html" class="nav-logo"><span>Web</span>Studio</a>
-          <div class="nav-ul">
-            <ul>
-              <li class="nav-list"><a href="" class="nav-link studio">Студия</a></li>
-              <li class="nav-list">
-                <a href="../goit-markup-hw-02/portfolio.html" class="nav-link">Портфолио</a>
-              </li>
-              <li class="nav-list"><a href="" class="nav-link">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="nav-div">
-            <ul>
-              <li class="nav-contacts">
-                <a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a>
-              </li>
-              <li class="nav-contacts">
-                <a href="tel:+380961111111" class="link-contacts">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    </div>
-    <main>
+    <header class="header">
       <div class="container">
-        <section class="hero">
+        <nav class="header-nav">
+          <a href="./index.html" class="header-logo"><span>Web</span>Studio</a>
+          <ul class="header-list">
+            <li class="header-item"><a href="" class="header-link studio">Студия</a></li>
+            <li class="header-item">
+              <a href="../goit-markup-hw-02/portfolio.html" class="header-link">Портфолио</a>
+            </li>
+            <li class="header-item"><a href="" class="header-link">Контакты</a></li>
+          </ul>
+          <ul class="header-list header-contacts">
+            <li class="item-contacts">
+              <a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a>
+            </li>
+            <li class="item-contacts">
+              <a href="tel:+380961111111" class="link-contacts">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero-btn">Заказать услугу</button>
-        </section>
-        <section class="pref">
+        </div>
+      </section>
+      <section class="pref">
+        <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
-          <ul>
-            <li class="pref-list">
+          <ul class="pref-list">
+            <li class="pref-item">
               <h3 class="pref-title">Внимание к деталям</h3>
               <p class="pref-text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
 
-            <li class="pref-list">
+            <li class="pref-item">
               <h3 class="pref-title">Пунктуальность</h3>
               <p class="pref-text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
 
-            <li class="pref-list">
+            <li class="pref-item">
               <h3 class="pref-title">Планирование</h3>
               <p class="pref-text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="pref-list">
+            <li class="pref-item">
               <h3 class="pref-title">Современные технологии</h3>
               <p class="pref-text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
-        </section>
-      </div>
-      <div class="container">
-        <section class="work">
+        </div>
+      </section>
+      <section class="work section">
+        <div class="container">
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="work-item"><img src="./images/1.jpg" alt="картинка 1" width="370" /></li>
             <li class="work-item"><img src="./images/2.jpg" alt="картинка 2" width="370" /></li>
             <li class="work-item"><img src="./images/3.jpg" alt="картинка 3" width="370" /></li>
           </ul>
-        </section>
-      </div>
-      <div class="container">
-        <section class="team">
+        </div>
+      </section>
+      <section class="team section">
+        <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <div class="team-wrapper">
@@ -133,15 +130,15 @@
               </li>
             </div>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
-    <div class="container">
-      <footer class="footer">
+    <footer class="footer">
+      <div class="container">
         <a href="./index.html" class="footer-logo"><span>Web</span>Studio</a>
         <address>
           <ul class="footer-list">
-            <li>
+            <li class="footer-item">
               <a
                 href="https://goo.gl/maps/t3Y8ttDa6r9vXGK56"
                 target="_blank"
@@ -150,11 +147,15 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li><a href="mailto:info@example.com" class="link-contacts">info@example.com</a></li>
-            <li><a href="tel:+380991111111" class="link-contacts">+38 099 111 11 11</a></li>
+            <li class="footer-item">
+              <a href="mailto:info@example.com" class="link-contacts">info@example.com</a>
+            </li>
+            <li class="footer-item">
+              <a href="tel:+380991111111" class="link-contacts">+38 099 111 11 11</a>
+            </li>
           </ul>
         </address>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

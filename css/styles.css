@@ -102,18 +102,32 @@ li > .studio:visited {
 .link-contacts:hover,
 .link-contacts:focus {
   color: var(--hover-color);
+  fill: var(--hover-color);
 }
 .header-contacts {
   margin-left: auto;
+  fill: #757575;
+}
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
 }
 .item-contacts:first-child {
   margin-right: 50px;
 }
 .link-contacts {
+  display: flex;
   color: var(--paragraph-color);
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
+  align-items: center;
 }
 
 /* --------------------------hero--------------------------- */
@@ -162,10 +176,37 @@ li > .studio:visited {
   flex-wrap: wrap;
   margin-left: -30px;
 }
+
 .pref-item {
-  height: 101px;
+  height: 251px;
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
+}
+.pref-block {
+  display: flex;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.icon-antenna {
+  width: 65px;
+  height: 70px;
+}
+.icon-clock {
+  width: 67px;
+  height: 70px;
+}
+.icon-diagram {
+  width: 70px;
+  height: 54px;
+}
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
 }
 .pref-title {
   color: var(--default-color);
@@ -214,7 +255,7 @@ li > .studio:visited {
 .team-wrapper {
   background-color: var(--white-color);
   width: 270px;
-  height: 368px;
+  height: 428px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -240,8 +281,73 @@ li > .studio:visited {
   line-height: 1.18;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
+.team-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  fill: #afb1b8;
+  cursor: pointer;
+}
+.team-link:not(:last-child) {
+  margin-right: 10px;
+}
+.icon-team {
+  width: 20px;
+  height: 20px;
+}
+.team-link:hover {
+  background-color: var(--hover-color);
+  fill: #ffffff;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+/* ----------------------clients---------*/
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--default-color);
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-link {
+  display: flex;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border: 1px solid #afb1b8;
+  fill: #afb1b8;
+}
+.clients-link:hover {
+  border: 1px solid var(--hover-color);
+  fill: var(--hover-color);
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.icon-logo {
+  width: 106px;
+  height: 60px;
+}
+
 /* ---------------------------footer--------------------------------- */
 
 address {
@@ -251,6 +357,9 @@ address {
   background: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer .container {
+  display: flex;
 }
 .footer-logo {
   font-family: 'Raleway', 'sans-serif';
@@ -278,6 +387,44 @@ address {
   color: var(--hover-color);
 }
 
+.footer-connect {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  fill: #ffffff;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-link:hover {
+  background-color: var(--hover-color);
+}
+.footer-link:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+.icon-footer {
+  width: 20px;
+  height: 20px;
+}
 /* ------------------------portfolio menu---------------------- */
 .portfolio-title {
   position: absolute;
@@ -335,6 +482,10 @@ li > .all {
   flex-basis: calc(100 / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+}
+.project-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .list-project {
   display: flex;
